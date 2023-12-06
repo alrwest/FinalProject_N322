@@ -14,6 +14,14 @@ import {
 import { buttons } from "../utils/utils";
 
 export default function LoginScreen({ navigation }) {
+  const [signinEmail, setSignInEmail] = useState();
+  const [signinPassword, setSignInPassword] = useState();
+  const [createFirstName, setCreateFirstName] = useState();
+
+  //create user function
+
+  //login function
+
   return (
     <ImageBackground
       source={require("../assets/app-hero.jpeg")}
@@ -35,8 +43,8 @@ export default function LoginScreen({ navigation }) {
         </Button>
 
         <Text style={styles.subHeader}> New? Create an account here.</Text>
-        <TextInput style={styles.input} label="Enter Email"></TextInput>
-        <TextInput style={styles.input} label="Enter Password"></TextInput>
+        <TextInput style={styles.input} label="Enter Name"></TextInput>
+        <TextInput style={styles.input} label="Create Password"></TextInput>
         <Button
           style={buttons}
           mode="contained"
